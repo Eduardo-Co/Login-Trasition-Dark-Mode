@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="background">
+        .
+        <div class="login">
+            <form action="#" method="POST">
+                <h2>Login</h2>
+                <input type="email" id="login"  placeholder="Usuário" name="Login" required>
+                <input type="password" id="password" placeholder="Senha" name="Password" required>
+                <div class="password-line">
+                    <label class="checkbox-label"><input type="checkbox" name="remember"> Remember Me</label>
+                    <a href="#">Forgot Password?</a>
+                </div>
+                <input type="submit" value="Login">
+                    <div class="register-line">
+                    <p>Don't have an account?</p> <a href="#">Register</a>
+                </div>
+                <input type="checkbox" class="sr-only" id="darkmode-toggle">
+                    <label for="darkmode-toggle" class="toggle">
+                    <span>Toggle dark mode</span>
+                    </label>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("darkmode-toggle").addEventListener("change", function() {
+        if(this.checked) {
+            document.querySelector('.background').style.backgroundImage = "url('img/88a615c1-6ab6-485b-b7ef-f7b5bb114183.jpeg')";
+        } else {
+            document.querySelector('.background').style.backgroundImage = "url('img/b862cc02-d17b-47cb-a63d-b16fb7ebb665.jpeg')";
+        }
+        });
+    </script>
+</body>
+</html>
